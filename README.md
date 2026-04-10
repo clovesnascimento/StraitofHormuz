@@ -183,5 +183,15 @@ A API permite invocar as *Hormuz Tools* por empacotamento JSON na requisição, 
 | **E-403 / Sandbox Out-of-Bounds** | FileOpsEngine detectou bypass sub-directory para root (ex: N:\). | Reversão imediata de payload. Monitoramento preventivo Alpha-10 acionado. |
 
 ---
+
+## 🚨 Aviso de Segurança de Rede (Host Binding)
+Por padrão, o servidor S.O.H.-X em `backend/main.py` utiliza o binding `0.0.0.0`. 
+*   **O que isso significa:** O servidor está acessível para qualquer dispositivo na sua rede local (LAN).
+*   **Ação Recomendada:** **NUNCA** exponha a porta `8000` ou `5001` diretamente na Internet sem um Proxy Reverso (como Nginx, Caddy ou Traefik) configurado com autenticação robusta e HTTPS (SSL/TLS).
+*   Para uso estritamente privado na mesma máquina, altere o `BACKEND_HOST` no arquivo `.env` para `127.0.0.1`.
+
+---
+
+---
 *CNGSM — Cognitive Neural & Generative Systems Management*  
 *Cloves Nascimento — Arquiteto de Ecossistemas Cognitivos*
