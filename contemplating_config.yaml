@@ -1,0 +1,28 @@
+contemplating_mode:
+  max_parallel_agents: 8
+  timeout_per_agent_ms: 30000
+  synthesis_model: "claude-sonnet-4-20250514"
+  debug_trace: false
+
+module9:
+  size_limit_tokens: 4096
+  fail_closed: true
+
+agent_registry:
+  path: "config/agent_registry.json"
+
+gdrive:
+  credentials_path: "config/service_account.json"
+
+silos:
+  core: "backend/silos/silo_core"
+  powershell: "backend/silos/silo_powershell"
+  python: "backend/silos/silo_python"
+  workspace: "workspace"
+  obsidian: "workspace/vault"
+
+# Paths usados pelos LocalFSAdapters
+local_paths:
+  workspace: "workspace"
+  obsidian_vault: "workspace/vault"
+

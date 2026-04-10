@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 550">
+  <defs>
+    <!-- Soft terrain shadow for subtle elevation -->
+    <filter id="elevation" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.10" />
+    </filter>
+    
+    <!-- Gentle sand/beige gradient for land topography -->
+    <linearGradient id="landGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfcf8" />
+      <stop offset="100%" stop-color="#e8e2d2" />
+    </linearGradient>
+
+    <!-- Map boundary clip -->
+    <clipPath id="mapFrame">
+      <rect x="25" y="25" width="450" height="400" rx="35" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#mapFrame)">
+    <!-- Light ocean blue for water base -->
+    <rect x="25" y="25" width="450" height="400" fill="#d3e9f5" />
+
+    <!-- Land Masses with elevation filter -->
+    <g fill="url(#landGrad)" filter="url(#elevation)">
+      <!-- Northern Territory (Iran layout) -->
+      <path d="M 25,25 L 475,25 L 475,160 C 370,160 320,90 240,150 C 140,230 80,180 25,180 Z" />
+      
+      <!-- Southern Territory (Musandam layout) -->
+      <path d="M 25,425 L 475,425 L 475,290 C 380,310 330,250 250,220 C 220,210 180,210 150,260 C 120,310 70,340 25,340 Z" />
+    </g>
+  </g>
+
+  <!-- Modern outline for the map tile -->
+  <rect x="25" y="25" width="450" height="400" rx="35" fill="none" stroke="#e0e0e0" stroke-width="1.5" />
+
+  <!-- Clean minimalist typography -->
+  <text x="250" y="490" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="400" font-size="28" fill="#555555" text-anchor="middle" letter-spacing="1.5">Strait of Hormuz</text>
+</svg>

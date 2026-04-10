@@ -1,0 +1,72 @@
+[
+  {
+    "agent_id": "ag-security",
+    "name": "Security Research Agent",
+    "source_type": "silo",
+    "source_ref": "silo_core",
+    "domain": "security, threat modeling, MITRE ATLAS, defense layers, CNGSM modules",
+    "description": "Silo core do CNGSM — documentação de segurança, relatórios G-SEC, Antigravity Defense Layer",
+    "permissions": "read",
+    "active": true
+  },
+  {
+    "agent_id": "ag-powershell",
+    "name": "PowerShell Silo Agent",
+    "source_type": "silo",
+    "source_ref": "silo_powershell",
+    "domain": "PowerShell, automação Windows, scripts administrativos",
+    "description": "Silo de scripts e conhecimento PowerShell do CNGSM",
+    "permissions": "read",
+    "active": true
+  },
+  {
+    "agent_id": "ag-python",
+    "name": "Python Silo Agent",
+    "source_type": "silo",
+    "source_ref": "silo_python",
+    "domain": "Python, FastAPI, scripts de análise, automação, transformação de dados",
+    "description": "Silo Python do CNGSM — código, bibliotecas e padrões",
+    "permissions": "read",
+    "active": true
+  },
+  {
+    "agent_id": "ag-gdrive-pub",
+    "name": "Public Drive Research Agent",
+    "source_type": "gdrive_public",
+    "source_ref": "https://drive.google.com/drive/folders/SUBSTITUA_PELO_FOLDER_ID_PUBLICO",
+    "domain": "documentos públicos compartilhados pelo operador",
+    "description": "Pasta pública do Google Drive — acessível sem autenticação",
+    "permissions": "read",
+    "active": false
+  },
+  {
+    "agent_id": "ag-gdrive-priv",
+    "name": "Private Drive Agent",
+    "source_type": "gdrive_private",
+    "source_ref": "SUBSTITUA_PELO_FOLDER_ID_PRIVADO",
+    "domain": "documentos privados do operador no Google Drive",
+    "description": "Pasta privada do Google Drive — requer service account ou OAuth2",
+    "permissions": "read",
+    "active": false
+  },
+  {
+    "agent_id": "ag-workspace",
+    "name": "Local Workspace Agent",
+    "source_type": "local",
+    "source_ref": "workspace",
+    "domain": "arquivos locais do workspace CNGSM, documentação, notas, outputs",
+    "description": "Busca no file system local dentro do WorkspaceSandbox",
+    "permissions": "read",
+    "active": true
+  },
+  {
+    "agent_id": "ag-obsidian",
+    "name": "Obsidian Vault Agent",
+    "source_type": "local",
+    "source_ref": "obsidian_vault",
+    "domain": "notas do Obsidian Vault — memória persistente do operador",
+    "description": "Acesso ao vault Obsidian do CNGSM — notas, links, contexto histórico",
+    "permissions": "read",
+    "active": true
+  }
+]
