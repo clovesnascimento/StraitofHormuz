@@ -120,17 +120,17 @@ Local onde o sistema armazena os bancos de dados vetoriais (ChromaDB) para pesqu
 
 ---
 
-## 8. Modo Coworker (Assistente de Programação IA)
+## 8. Modo Hormuz Code (Assistente de Programação IA)
 
-Este é o modo "Power User" para desenvolvedores, permitindo um par de programação IA diretamente no terminal (Estilo Claude Code).
+Este é o modo "Power User" para desenvolvedores, permitindo um par de programação IA diretamente no terminal.
 
 ### Como Acessar
-Inicie o `START_SOH.bat` e selecione a **Opção [2] COWORKER Modo**.
+Inicie o `START_SOH.bat` e selecione a **Opção [2] Hormuz Code Modo**.
 
 ### Principais Capacidades:
 - **Codificação Proativa:** Peça para criar novas funcionalidades, classes ou scripts completos.
 - **Análise de Erros:** Cole logs de erro e o sistema lerá os arquivos necessários para sugerir correções.
-- **Execução em Sandbox:** O Coworker pode rodar comandos `python`, `pytest` ou `npm` dentro da sandbox e analisar o retorno.
+- **Execução em Sandbox:** O Hormuz Code pode rodar comandos `python`, `pytest` ou `npm` dentro da sandbox e analisar o retorno.
 - **Raciocínio Multi-Etapa:** O agente pensa (Thought), executa uma ação e ajusta sua estratégia baseada na observação do resultado.
 
 ---

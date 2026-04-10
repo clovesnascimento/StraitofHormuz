@@ -29,7 +29,7 @@ if %ERRORLEVEL% NEQ 0 (
 echo [3/3] Selecione o Modo Operacional:
 echo.
 echo [1] Dashboard Hormuz (Monitoramento e Tarefas)
-echo [2] COWORKER Modo (Assistente de Programacao IA)
+echo [2] Hormuz Code (Assistente de Programacao IA)
 echo [3] MODO CONTEMPLATING (Pesquisa Profunda Multi-Agente)
 echo [4] Sair
 echo.
